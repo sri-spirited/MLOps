@@ -1,5 +1,6 @@
 # setup.py
 # Setup installation for the application
+# Added a test line
 
 from pathlib import Path
 
@@ -40,11 +41,7 @@ setup(
     author="Goku Mohandas",
     author_email="hello@madewithml.com",
     url="https://madewithml.com/",
-    keywords=[
-        "machine-learning",
-        "artificial-intelligence",
-        "madewithml",
-    ],
+    keywords=["machine-learning", "artificial-intelligence", "madewithml",],
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
@@ -59,9 +56,5 @@ setup(
         "dev": test_packages + dev_packages + docs_packages,
         "docs": docs_packages,
     },
-    entry_points={
-        "console_scripts": [
-            "tagifai = app.cli:app",
-        ],
-    },
+    entry_points={"console_scripts": ["tagifai = app.cli:app",],},
 )
